@@ -19,16 +19,12 @@ body {
 }
 
 .form-item {
-  margin-right: 1.8rem;
+  margin-right: 6.4rem;
 }
 
 label.primary {
   display: block;
   margin: 0.4em 0;
-}
-
-label::after {
-  content: ":";
 }
 
 button, select, input[type="submit"], input[type="text"], input[type="radio"] {
