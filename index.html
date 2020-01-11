@@ -10,7 +10,6 @@
 <body>
 
   <h1>Fibre Stocklist App</h1>
-  <ul id="fibre-stocklist"></ul>
 
   <form id="new-item-form">
     <div id="form-wrapper">
@@ -18,41 +17,58 @@
       <div class="form-item">
         <label for="name" class="primary">Name</label>
         <input type="text" id="name" required/>
+      </div>
+      <br>
 
 
-        <div class="form-item">
-          <label for="typeOfFibre" class="primary">Type of Fibre</label>
-          <select id= "typeOfFibre">
-            <option value="" disabled selection></option>
-            <option value="sheep">sheep</option>
-            <option value="goat">goat</option>
-            <option value="rabbit">rabbit</option>
-            <option value="yak">yak</option>
-          </select>
-        </div>
+      <div class="form-item">
+        <label for="typeOfFibre" class="primary">Type of Fibre</label>
+        <select id= "typeOfFibre">
+          <option value="" disabled selection></option>
+          <option value="sheep">sheep</option>
+          <option value="goat">goat</option>
+          <option value="rabbit">rabbit</option>
+          <option value="yak">yak</option>
+        </select>
+      </div>
+      <br>
 
-        <div class="form-item">
-          <label for="properties" class="primary">Properties</label>
-          <input type="text" id="properties" required/>
+      <div class="form-item">
+        <label for="properties" class="primary">Properties</label>
+        <input type="text" id="properties" required/>
+      </div>
+      <br>
 
-          <div class="form-item">
-            <label for="coloursAvailable" class="primary">Colours Available</label>
-            <input type="text" id="coloursAvailable" required/>
+      <div class="form-item">
+        <label for="coloursAvailable" class="primary">Colours Available</label>
+        <input type="text" id="coloursAvailable" required/>
+      </div>
+      <br>
 
-            <div class="form-item">
-              <label for="stapleLength" class="primary">Staple Length</label>
-              <select id="stapleLength">
-                <option value="" disabled selection></option>
-                <option value="short">short</option>
-                <option value="medium">medium</option>
-                <option value="long">long</option>
-              </select>
-            </div>
-          </div>
-          <input type="submit" value="save"/>
-        </form>
+      <div class="form-item">
+        <label for="stapleLength" class="primary">Staple Length</label>
+
+        <input type="radio" id="stapleChoice1"
+        name="stapleLength" value="short" required>
+        <label for="stapleChoice1">short</label>
+
+        <input type="radio" id="stapleChoice2"
+        name="stapleLength" value="medium" required>
+        <label for="stapleChoice2">medium</label>
+
+        <input type="radio" id="stapleChoice3"
+        name="stapleLength" value="long" required>
+        <label for="stapleChoice3">long</label>
+      </div>
+      <br>
+
+    </div>
+
+    <input type="submit" value="save"/>
+  </form>
 
         <h1>Current Stock</h1>
+        <ul id="fibres-list"></ul>
 
         <button id="delete-all">Clear Stocklist</button>
 
