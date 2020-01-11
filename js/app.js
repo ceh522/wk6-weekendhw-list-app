@@ -20,24 +20,24 @@ const createfibresListItem = function (form) {
   const fibresListItem = document.createElement('li');
   fibresListItem.classList.add('fibres-list-item');
 
-  const name = document.createElement('h2');
-  name.textContent = form.name.value;
+  const name = document.createElement('ul');
+  name.textContent = `Name: ${form.name.value}`;
   fibresListItem.appendChild(name);
 
-  const typeOfFibre = document.createElement('h3');
-  typeOfFibre.textContent = form.typeOfFibre.value;
+  const typeOfFibre = document.createElement('ul');
+  typeOfFibre.textContent = `Type of fibre: ${form.typeOfFibre.value}`;
   fibresListItem.appendChild(typeOfFibre);
 
-  const properties = document.createElement('h4');
-  properties.textContent = form.properties.value;
+  const properties = document.createElement('ul');
+  properties.textContent = `Properties: ${form.properties.value}`;
   fibresListItem.appendChild(properties);
 
-  const coloursAvailable = document.createElement('h5');
-  coloursAvailable.textContent = form.coloursAvailable.value;
+  const coloursAvailable = document.createElement('ul');
+  coloursAvailable.textContent = `Colours Available: ${form.coloursAvailable.value}`;
   fibresListItem.appendChild(coloursAvailable);
 
-  const stapleLength = document.createElement('h6');
-  stapleLength.textContent = form.stapleLength.value;
+  const stapleLength = document.createElement('ul');
+  stapleLength.textContent = `Staple Length: ${form.stapleLength.value}`;
   fibresListItem.appendChild(stapleLength);
 
   return fibresListItem;
